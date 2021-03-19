@@ -1,0 +1,96 @@
+<!-- 
+    <a> Os links (ou hiperlinks) permitem que os usuários cliquem para ir de uma página para outra.
+ -->
+
+
+<!-- ######################## 
+    sintaxe básica -->
+
+<a href="https://www.google.com">Ir para o google</a>
+
+
+<!-- ########################
+     O atributo de destino (target)
+    _self - Predefinição. Abre o documento na mesma janela / guia em que foi clicado
+    _blank - Abre o documento em uma nova janela ou guia
+ -->
+
+<hr>
+<a href="https://www.google.com" target="_blank">Ir para o google</a>
+
+
+
+<!-- ########################
+    Conteúdo dentro dos hyperlinks
+    - imagens, textos, qualquer coisa...    
+-->
+<hr>
+<a href="https://www.google.com">
+    <h3>Qualquer coisa</h3>
+    <img src="imagens/husky.png" alt="">
+</a>
+
+
+<!-- 
+    ########################
+    URLs Absolutos vs Relativos 
+    - Absoluto 
+        . Um endereço da web completo
+        . Inclui protocolo e nome de domínio
+        . Sempre aponta para o mesmo local
+    - Relativo 
+        . Um link para uma página dentro do mesmo site. Sem a parte "https://www"
+        . Relativo a página atual
+        . Aponta para lugares diferentes
+-->
+<hr>
+<h3>Absoluto</h3>
+<a href="https://www.ifpi.edu.br">IFPI - Absoluto</a>
+<h3>Relativo</h3>
+<a href="ifpi.edu.br">IFPI - Relativo</a>
+
+
+
+
+<!-- ########################
+    Email e Telefone
+    - Email (mailto:seu_email@email.com)
+    - Telefone (tel:+55899xxxx)
+ -->
+<hr>
+<h3>Telefone e email</h3>
+<a href="mailto:rafaluzaraujo@ifpi.edu.br">Meu email</a>
+<br>
+<a href="tel:+5589999162266">Meu Telefone</a>
+
+
+<!-- ######################## 
+    Apontando para elementos da página (id)
+  -->
+
+  <ul>
+      <li><a href="#servicos">serviços</a></li>
+      <li><a href="#sobre">sobre</a></li>
+      <li><a href="#contato">contato</a></li>
+  </ul>
+
+<section id="servicos">
+    <h1>Serviços</h1>
+</section>
+
+<section id="sobre">
+    <h1>Sobre</h1>
+</section>
+
+<section id="contato">
+    <h1>Contato</h1>
+</section>
+
+
+<!-- ########################
+    Navegação entre diretórios
+    - Mesma pasta (arquivo.html)
+    - Entrando em outras pastas (pasta/arquivo.html)
+    - Saindo de uma pasta (../arquivo.html)
+    - Diretório raiz (root) (arquivo.html ou ./arquivo.html)
+    -->

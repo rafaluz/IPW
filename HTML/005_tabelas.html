@@ -1,0 +1,103 @@
+<!-- 
+
+As tabelas HTML permitem que 
+os desenvolvedores da web organizem 
+os dados em linhas e colunas.
+
+<table> define uma tabela
+<tr> define a linha
+<th> define os cabeçalhos da tabela ( negrito e centralizado)
+<td> define os dados/celulas (regular e alinhado à esquerda)
+
+Não se usa mais tabela para criar seu layout!
+ -->
+
+ 
+
+<!-- Criando uma tabela básica (professor, disciplina) -->
+
+<table>
+    <tr>
+        <th>Professor</th>
+        <th>Disciplina</th>
+    </tr>
+    <tr>
+        <td>Rafael</td>
+        <td>IPW, PAW, LOG</td>
+    </tr>
+    <tr>
+        <td>Rodolfo</td>
+        <td>Redes</td>
+    </tr>
+    <tr>
+        <td>Selles</td>
+        <td>ALG</td>
+    </tr>
+</table>
+
+
+<!-- 
+    Melhorando a tabela
+    <caption>, <thead>, <tbody> e <tfoot>. 
+-->
+<hr>
+<table>
+    <caption>Tabela dos profs de Info</caption>
+    <thead>
+        <tr>
+            <th>Professor</th>
+            <th>Disciplina</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Rafael</td>
+            <td>IPW, PAW, LOG</td>
+        </tr>
+        <tr>
+            <td>Rodolfo</td>
+            <td>Redes</td>
+        </tr>
+        <tr>
+            <td>Selles</td>
+            <td>ALG</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+
+<!-- 
+    Atributos colspan e rowspan
+    colspan - uma célula com muitas colunas
+    rowspan - uma célula com várias linhas
+ -->
+
+<hr>
+<table class="teste">
+    <tr>
+        <td rowspan="2">Teste</td>
+        <td>Teste</td>
+        <td>Teste</td>
+    </tr>
+    <tr>
+        <td>Teste</td>
+        <td>Teste</td>
+    </tr>
+</table>
+
+ <!-- Propriedades border e border-collapse -->
+
+ <style>
+     table, th, td {
+         border: 1px solid red;
+         border-collapse: collapse;
+         padding: 5px 10px;
+     }
+ </style>
