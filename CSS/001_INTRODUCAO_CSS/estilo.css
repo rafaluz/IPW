@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.equipe {
+    background-color: #F5F7FA;
+    padding: 60px 0;
+    height: auto;
+}
+
+h1 {
+    color: #032C6E;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.row {
+    clear: both;
+    display: inline-block;
+}
+
+.card {
+    background-color: #fff;
+    width: 31%;
+    margin: 10px 1%;
+    padding: 40px 20px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    transform: scale(0.9);
+}
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26) ;
+}
+
+.card:hover img {
+    transition: 1s;
+    transition-delay: 0.5s;
+    box-shadow: 0px 0px 10px #032C6E;
+}
+
+.card img {
+    width: 50%;
+    border-radius: 50%;
+    /* display: block;
+    margin: 0 auto; */
+}
+
+.card h3 {
+    color: #ACACAC;
+    font-size: 21px;
+    margin-top: 20px;    
+}
+
+.card h2 {
+    color: #032C6E;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #5E5E5E;
+    font-size: 14px;
+    line-height: 21px;    
+}
+
+
+.botao {
+    background-color: #EEEDF5;
+    color: #5E5E5E;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    margin: 30px 0 0 0;
+}
+
+.botao:hover {
+    background-color: #032C6E;
+    color: #EEEDF5;
+}
+
