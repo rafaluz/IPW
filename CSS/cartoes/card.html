@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .titulo-principal {
+            font-family: 'Rampart One', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .card {
+            width: 30%;
+            box-shadow: 0 0 10px rgba(105, 104, 104, 0.514);
+            float: left;
+            margin: 10px;
+            
+        }
+
+        .card img {
+            width: 100%;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+
+        .card .card-body {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .card .card-body svg {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: -44px;
+        }
+
+        .card .card-body h2 {
+            margin-bottom: 10px;
+            font-family: 'Rampart One', cursive;
+            font-size: 30px;
+        }
+
+        .card .card-body p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+
+
+        .botao-flutuante {
+            background-color: chocolate;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            padding: 20px;
+            text-align: center;
+
+            position: fixed;
+            right: 1%;
+            bottom: 3%;
+
+            border: chocolate 4px solid;
+            color: #fff;
+            box-shadow: black 0 0 5px;
+        }
+
+        .botao-flutuante:hover {
+            border: chocolate 4px solid;
+            color: chocolate;
+            background: #fff;
+            box-shadow: black 0 0 10px;
+            /* cursor: pointer; */
+        }
+
+        .botao-flutuante span {
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- botao flutuante -->
+
+        <a href="#">
+            <div class="botao-flutuante">
+                <span>
+                    <i class="fas fa-arrow-up"></i>
+                </span>
+            </div>
+        </a>
+
+        <h1 class="titulo-principal">Propriedade Float</h1>
+        <div class="card">
+            <img src="img/homem-card.png" alt="">
+
+            <div class="card-body">
+                <h2>Rafael Luz</h2>
+                <p>Professor de informática do IFPI</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/mulher-card.png" alt="">
+
+            <div class="card-body">
+                <h2>Maria</h2>
+                <p>Professora de informática do IFPI</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/mulher-card.png" alt="">
+
+            <div class="card-body">
+                <h2>Maria</h2>
+                <p>Professora de informática do IFPI</p>
+            </div>
+        </div>
+
+
+        <h1 class="titulo-principal">Propriedade Position</h1>
+        <div class="card">
+            <img src="img/homem-card.png" alt="">
+
+            <div class="card-body">
+                <svg width="401" height="47" viewBox="0 0 401 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M197.246 9.71509C164.005 2.15308 51.898 31.4209 0 47H401V0C357.446 1.31285 341.926 16.0168 299.373 25.9944C256.82 35.9721 238.798 19.1676 197.246 9.71509Z"
+                        fill="white" />
+                </svg>
+
+                <h2>Rafael Luz</h2>
+                <p>Professor de informática do IFPI</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
