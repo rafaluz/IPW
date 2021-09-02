@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula flexbox</title>
+
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: hsla(240, 85%, 68%, 0.801);
+        }
+
+        header img {
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            clip-path: circle();
+        }
+
+
+
+        header nav ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0px 20px;
+            transition: 0.5s;
+        }
+
+        header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.103);
+            padding: 15px 20px;
+        }
+
+        #contato {
+            flex-grow: 1;
+            margin: 10px 0;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+
+        #sobre {
+            flex-grow: 1;
+            margin: 10px 0;
+            height: 200px;
+            background-color: rgb(38, 66, 117);
+        }
+
+        .flexrafa {
+            display: flex;
+            
+        }
+
+        #inicio {
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            justify-content: space-between;
+        }
+
+        #inicio img {
+            width: 350px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://images.unsplash.com/photo-1520848315518-b991dd16a625?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVza3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <!-- <h1>Inicio</h1> -->
+            <img src="https://images.unsplash.com/photo-1574273443477-87bf272e5100?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHVza3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1574273443477-87bf272e5100?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHVza3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1574273443477-87bf272e5100?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHVza3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1574273443477-87bf272e5100?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHVza3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae et sint enim, maiores itaque
+                voluptatum quod nihil, corporis voluptates maxime inventore, excepturi quasi debitis perferendis
+                possimus eveniet aspernatur ut non.</p> -->
+        </section>
+
+        <div class="flexrafa">
+            <section id="contato">
+                Contato
+            </section>
+
+            <section id="sobre">
+                Sobre
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

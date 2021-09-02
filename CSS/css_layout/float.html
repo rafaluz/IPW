@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts CSS</title>
+
+    <style>
+        /* Resetando as propriedades */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 62.5%;
+
+            --cor_base: 100;
+            --cor_header: hsl(var(--cor_base), 68%, 17%);
+            --cor_section_inicio: hsl(var(--cor_base), 31%, 38%);
+            --cor_section_contato: hsl(var(--cor_base), 33%, 73%);
+            --cor_footer: hsl(var(--cor_base), 32%, 90%);
+        }
+
+        body {
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* CAbeçalho */
+        header {
+            background: var(--cor_header);
+            height: 100px;
+            padding: 35px;
+        }
+
+        header ul {
+            float: right;
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        header ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        /* Section Inicio */
+        #inicio {
+            background: var(--cor_section_inicio);
+            height: 400px;
+            float: left;
+            width: 70%;
+            padding: 30px 20px;
+        }
+
+        /* Section Contato */
+        #contato {
+            background: var(--cor_section_contato);
+            height: 400px;
+            width: 30%;
+            float: left;
+            padding: 30px 20px;
+        }
+
+        /* Rodapé */
+        footer {
+            background: var(--cor_footer);
+            height: 100px;
+            clear: both;
+        }
+
+
+        .titulo {
+            font-size: 4.1rem;
+            text-align: center;
+        }
+
+        .paragrafo {
+            font-size: 2.1rem;
+        }
+
+        @media (max-width: 600px) {
+            :root {
+                font-size: 50%;
+            }
+
+            #inicio,
+            #contato {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav>
+            <h1>CSS Layout</h1>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteudo central do site -->
+    <main>
+
+        <!-- Aqui vem as seções de Conteudo -->
+        <section id="inicio">
+            <h1 class="titulo">Inicio  da bagaça</h1>
+            <p class="paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, deserunt veritatis.
+                Tenetur voluptate
+                cupiditate facilis sunt, magnam quos aspernatur quo, doloribus cumque maxime illum vel quia vero? Nihil,
+                iure dignissimos?</p>
+        </section>
+        <section id="contato">
+            <h1 class="titulo">Contato</h1>
+            <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro delectus, ratione,
+                molestias praesentium
+                maiores dolore, magnam soluta ab vero ipsa quibusdam nam veritatis neque? Explicabo eligendi obcaecati
+                quibusdam saepe esse!/p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer></footer>
+
+
+</body>
+
+</html>

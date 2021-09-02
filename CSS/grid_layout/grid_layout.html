@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header,
+        .menu,
+        .main,
+        .direita,
+        .footer {
+            background-color: rgb(113, 180, 180);
+            text-align: center;
+            padding: 10px 0;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .header { grid-area: header;}
+        .menu { grid-area: menu;}
+        .main { grid-area: main;}
+        .direita { grid-area: direita;}
+        .footer { grid-area: footer;}
+
+        .grid {
+            background-color: blue;
+            display: grid;
+            grid-template-columns: 2fr 7fr 3fr;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-areas: 
+            'header header header'
+            'menu main direita' 
+            'footer footer footer';
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <header class="header">Cabeçalho</header>
+        <nav class="menu">Menu</nav>
+        <main class="main">Central</main>
+        <aside class="direita">Direita</aside>
+        <footer class="footer">Rodape</footer>
+    </div>
+</body>
+
+</html>
