@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da turma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <div class="header-body container">
+            <nav>
+                <h1><span>InfoWeb</span>2021</h1>
+
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#professor">Professor</a></li>
+                    <li><a href="#alunos">Alunos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-conteudo">
+                <h1>O maior time de desenvolvedores de Paulistana!</h1>
+                <a href="">FALE CONOSCO</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- professor -->
+        <section class="professor">
+            <div class="container">
+
+                <h1 class="titulo-principal">Professor</h1>
+
+                <div class="row">
+                    <div class="col-6">
+                        <img class="img-prof" src="img/professor.png" alt="imagem professor">
+                    </div>
+
+                    <div class="col-6 descricao-professor">
+                        <div>
+                            <h2>Rafael Luz Araújo</h2>
+
+                            <ul>
+                                <li>Professor EBTT no IFPI Campus Paulistana</li>
+                                <li>Graduado em Análise e Desenvolvimento de Sistemas</li>
+                                <li>Especialista em Banco de Dados</li>
+                                <li>Mestrando em Engenharia Elétrica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- alunos -->
+        <section class="alunos">
+            <div class="container">
+                <h1 class="titulo-principal">Alunos</h1>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/alunos1.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/alunos2.jpg" alt="" style="width: 100%;">
+                        <img src="img/alunos3.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/alunos4.jpg" alt="" style="width: 100%;">
+                        <img src="img/alunos5.jpg" alt="" style="width: 100%;">
+                    </div>
+                </div>
+                <p>Os melhores alunos estão aqui, não é querendo bajular, mas esta turma tem futuro!</p>
+            </div>
+        </section>
+
+        <!-- contato -->
+        <section class="contato">
+            <div class="container">
+                <h1 class="titulo-principal">Contato</h1>
+                <p>Entre em contato conosco através do formulário abaixo.</p>
+
+                <form class="formulario" action="" method="POST">
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+
+                    <input type="submit" value="Enviar Mensagem">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><span>Desenvolvido por</span> Rafael Luz Araújo</p>
+        </div>
+    </footer>
+</body>
+
+</html>
